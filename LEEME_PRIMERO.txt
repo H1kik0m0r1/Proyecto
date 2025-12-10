@@ -1,0 +1,38 @@
+═══════════════════════════════════════════════════════════════
+  PROYECTO LINA - INSTRUCCIONES RÁPIDAS
+═══════════════════════════════════════════════════════════════
+
+¿PRIMERA VEZ USANDO ESTE PROYECTO?
+
+1. INSTALAR NODE.JS (Solo una vez)
+   - Ve a: https://nodejs.org/
+   - Descarga la versión LTS
+   - Instálalo (siguiente, siguiente, instalar)
+
+2. ABRIR TERMINAL EN ESTA CARPETA
+   - Windows: Click derecho → "Abrir PowerShell aquí"
+   - Mac/Linux: Abrir Terminal y navegar a esta carpeta
+
+3. INSTALAR DEPENDENCIAS (Solo la primera vez)
+   Escribe: npm install
+   Espera 1-3 minutos
+
+4. EJECUTAR EL PROYECTO
+   Escribe: npm run dev
+   
+5. ABRIR EN NAVEGADOR
+   Ve a: http://localhost:5173
+
+═══════════════════════════════════════════════════════════════
+
+¿REACT ESTÁ INSTALADO?
+NO necesitas instalar React por separado.
+Se instala automáticamente con: npm install
+
+═══════════════════════════════════════════════════════════════
+
+¿PROBLEMAS?
+Lee: INSTRUCCIONES_INSTALACION.md
+
+═══════════════════════════════════════════════════════════════
+
