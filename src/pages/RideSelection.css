@@ -1,0 +1,109 @@
+.ride-selection-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f8fafc;
+}
+
+.mini-map-header {
+    height: 30vh;
+    background-color: #e2e8f0; /* Color gris mapa */
+    position: relative;
+    /* Patrón de fondo opcional */
+    background-image: radial-gradient(#cbd5e0 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.selection-panel {
+    flex-grow: 1;
+    background: white;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    margin-top: -20px; /* Solapamiento visual */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+}
+
+.destination-summary {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.destination-summary .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #718096;
+}
+
+.options-list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+}
+
+.ride-option {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.ride-option.selected {
+    border-color: #000;
+    background-color: #f7fafc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.ride-icon { font-size: 2rem; margin-right: 1rem; }
+.ride-details { flex-grow: 1; display: flex; flex-direction: column; }
+.ride-name { font-weight: bold; font-size: 1.1rem; }
+.ride-time { font-size: 0.9rem; color: #4a5568; }
+.ride-price { font-weight: bold; font-size: 1.2rem; }
+
+.action-footer {
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.confirm-btn {
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 1.2rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* === MODO ALTO CONTRASTE (BLIND / LOW VISION) === */
+.blind .result-item, 
+.blind .ride-option {
+    border: 2px solid #ffff00;
+    background: #000;
+    color: #ffff00;
+    margin-bottom: 1rem;
+}
+
+.blind .place-name, .blind .ride-name, .blind .ride-price {
+    color: #ffff00;
+}
+
+.blind .place-address, .blind .ride-time {
+    color: #00ffff; /* Cian para secundario */
+}
+
+.blind .confirm-btn {
+    background: #ffff00;
+    color: #000;
+    font-size: 1.5rem; /* Texto más grande */
+}
